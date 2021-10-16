@@ -1,0 +1,169 @@
+/* --- NAVBAR STYLES --- */
+.nav-bar-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #d14244;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+  
+.navbar-link {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 0 30px 0 0;
+    text-decoration: none;
+    height: 70px;
+}
+  
+#about:hover,
+#work:hover,
+#contact:hover {
+    color: #b4b4b4;
+}
+  
+/* --- HEADER STYLES --- */
+.top-header-container {
+    background-color: #3c3c3c;
+    height: 480px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.page-header,
+.page-header-paragraph {
+    font-family: 'Open Sans', sans-serif;
+}
+  
+.page-header {
+    font-size: 48px;
+    margin-bottom: -10px;
+    color: white;
+}
+  
+.page-header-paragraph {
+    font-size: 24px;
+    font-style: italic;
+    color: #d14244;
+}
+  
+/* --- PROJECTS STYLES --- */
+img {
+    height: 350px;
+}
+  
+.project-head {
+    background-color: #4A7294;
+    display: flex;
+    justify-content: center;
+}
+  
+.header-two {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+  
+.top-project-container,
+.bottom-project-container {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+  
+.top-project-container {
+    background-color: #4A7294;
+}
+  
+.bottom-project-container {
+    background-color: #4A7294;
+}
+  
+.project-about {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+  
+/* --- CONTACT INFO STYLES --- */
+.contact-container {
+    background-color: #3c3c3c;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.footer-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+    margin-top: -10px;
+}
+  
+.social-links-container {
+    display: flex;
+}
+  
+.social-image {
+    width: 75px;
+    height: auto;
+    padding: 20px 30px;
+}
+  
+/* Media Query for iPhone 13 */
+@media only screen
+    and (max-width: 390px) {
+        .nav-bar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      
+        .top-header-container {
+            height: 360px;
+        }
+      
+        .page-header {
+            font-size: 36px;
+        }
+      
+        .header-two {
+            font-size: 28px;
+            text-align: center;
+        }
+      
+        .top-project-container,
+        .bottom-project-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+      
+        .project-image {
+            width: 150px;
+            height: auto;
+        }
+        
+        .social-links-container {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+        }
+      
+        .social-image {
+            width: 50px;
+        }
+}
